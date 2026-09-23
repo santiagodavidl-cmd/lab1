@@ -17,7 +17,7 @@
     "feignClient": null,
     "jhipsterVersion": "9.0.0",
     "jwtSecretKey": "OTZmZDAwYzNjNjQ2MWMzYWI2NDQxNjA3MTMzOTRiNTZlOWVkNzZiNTk3OTZiMDc5MWQzYjFhZjdjZjI3MzUxZTlhNmI2Yjg0OGUxMTE3NDIzODhhYWM4NWYxMDhiNmI0N2Q4YmMxNDM0MmE1ZDFiNzM3MTNlMzFmYTBmYjAwNjg=",
-    "languages": ["es"],
+    "languages": ["es", "en"],
     "microfrontend": null,
     "microfrontends": [],
     "nativeLanguage": "es",
