@@ -1,7 +1,9 @@
 package com.udea.proyecto.config;
 
 import java.time.Duration;
-import org.ehcache.config.builders.*;
+import org.ehcache.config.builders.CacheConfigurationBuilder;
+import org.ehcache.config.builders.ExpiryPolicyBuilder;
+import org.ehcache.config.builders.ResourcePoolsBuilder;
 import org.ehcache.jsr107.Eh107Configuration;
 import org.hibernate.cache.jcache.ConfigSettings;
 import org.springframework.boot.cache.autoconfigure.JCacheManagerCustomizer;
@@ -44,6 +46,11 @@ public class CacheConfiguration {
             createCache(cm, com.udea.proyecto.domain.User.class.getName());
             createCache(cm, com.udea.proyecto.domain.Authority.class.getName());
             createCache(cm, com.udea.proyecto.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.udea.proyecto.domain.Avion.class.getName());
+            createCache(cm, com.udea.proyecto.domain.Avion.class.getName() + ".vueloses");
+            createCache(cm, com.udea.proyecto.domain.Vuelo.class.getName());
+            createCache(cm, com.udea.proyecto.domain.Pasajero.class.getName());
+            createCache(cm, com.udea.proyecto.domain.Reserva.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

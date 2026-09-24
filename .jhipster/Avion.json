@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20260924054614"
+  },
+  "applications": ["*"],
+  "fields": [
+    {
+      "fieldName": "modelo",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "capacidad",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "500",
+      "fieldValidateRulesMin": "10"
+    },
+    {
+      "fieldName": "matricula",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    }
+  ],
+  "name": "Avion",
+  "relationships": [
+    {
+      "otherEntityName": "vuelo",
+      "otherEntityRelationshipName": "avion",
+      "relationshipName": "vuelos",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

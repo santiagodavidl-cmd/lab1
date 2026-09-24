@@ -1,0 +1,47 @@
+{
+  "annotations": {
+    "changelogDate": "20260924054615"
+  },
+  "applications": ["*"],
+  "fields": [
+    {
+      "fieldName": "numeroVuelo",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "origen",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "destino",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fechaSalida",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "precio",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Vuelo",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "matricula",
+      "otherEntityName": "avion",
+      "otherEntityRelationshipName": "vuelos",
+      "relationshipName": "avion",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,39 @@
+
+entity Avion {
+  modelo String required,
+  capacidad Integer required min(10) max(500),
+  matricula String required unique
+}
+
+entity Vuelo {
+  numeroVuelo String required,
+  origen String required,
+  destino String required,
+  fechaSalida Instant required,
+  precio BigDecimal required
+}
+
+entity Pasajero {
+  nombre String required,
+  apellido String required,
+  documento String required unique,
+  email String required
+}
+
+entity Reserva {
+  codigoReserva String required unique,
+  fechaReserva Instant required,
+  asiento String
+}
+
+relationship OneToMany {
+  Avion{vuelos} to Vuelo{avion(matricula)}
+}
+
+relationship ManyToOne {
+  Reserva{pasajero(documento)} to Pasajero,
+  Reserva{vuelo(numeroVuelo)} to Vuelo
+}
+
+paginate Vuelo, Pasajero, Reserva with pagination
+service all with serviceImpl
