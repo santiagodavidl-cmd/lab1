@@ -17,7 +17,7 @@ import org.springframework.boot.testcontainers.context.ImportTestcontainers;
 @Retention(RetentionPolicy.RUNTIME)
 @SpringBootTest(
     classes = {
-        Proyecto2026App.class,
+        AerolineaVirtualApp.class,
         JacksonConfiguration.class,
         AsyncSyncConfiguration.class,
         com.udea.proyecto.config.JacksonHibernateConfiguration.class,

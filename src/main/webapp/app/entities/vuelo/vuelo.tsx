@@ -94,16 +94,16 @@ export const Vuelo = () => {
   return (
     <div>
       <h2 id="vuelo-heading" data-cy="VueloHeading">
-        <Translate contentKey="proyecto2026App.vuelo.home.title">Vuelos</Translate>
+        <Translate contentKey="aerolineaVirtualApp.vuelo.home.title">Vuelos</Translate>
         <div className="d-flex justify-content-end">
           <Button className="me-2" variant="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
-            <Translate contentKey="proyecto2026App.vuelo.home.refreshListLabel">Refresh List</Translate>
+            <Translate contentKey="aerolineaVirtualApp.vuelo.home.refreshListLabel">Refresh List</Translate>
           </Button>
           <Link to="/vuelo/new" className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
-            <Translate contentKey="proyecto2026App.vuelo.home.createLabel">Create new Vuelo</Translate>
+            <Translate contentKey="aerolineaVirtualApp.vuelo.home.createLabel">Create new Vuelo</Translate>
           </Link>
         </div>
       </h2>
@@ -113,30 +113,31 @@ export const Vuelo = () => {
             <thead>
               <tr>
                 <th className="hand" onClick={sort('id')}>
-                  <Translate contentKey="proyecto2026App.vuelo.id">ID</Translate> <FontAwesomeIcon icon={getSortIconByFieldName('id')} />
+                  <Translate contentKey="aerolineaVirtualApp.vuelo.id">ID</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('id')} />
                 </th>
                 <th className="hand" onClick={sort('numeroVuelo')}>
-                  <Translate contentKey="proyecto2026App.vuelo.numeroVuelo">Numero Vuelo</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.vuelo.numeroVuelo">Numero Vuelo</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('numeroVuelo')} />
                 </th>
                 <th className="hand" onClick={sort('origen')}>
-                  <Translate contentKey="proyecto2026App.vuelo.origen">Origen</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.vuelo.origen">Origen</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('origen')} />
                 </th>
                 <th className="hand" onClick={sort('destino')}>
-                  <Translate contentKey="proyecto2026App.vuelo.destino">Destino</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.vuelo.destino">Destino</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('destino')} />
                 </th>
                 <th className="hand" onClick={sort('fechaSalida')}>
-                  <Translate contentKey="proyecto2026App.vuelo.fechaSalida">Fecha Salida</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.vuelo.fechaSalida">Fecha Salida</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('fechaSalida')} />
                 </th>
                 <th className="hand" onClick={sort('precio')}>
-                  <Translate contentKey="proyecto2026App.vuelo.precio">Precio</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.vuelo.precio">Precio</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('precio')} />
                 </th>
                 <th>
-                  <Translate contentKey="proyecto2026App.vuelo.avion">Avion</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="aerolineaVirtualApp.vuelo.avion">Avion</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th />
               </tr>
@@ -197,7 +198,7 @@ export const Vuelo = () => {
         ) : (
           !loading && (
             <div className="alert alert-warning">
-              <Translate contentKey="proyecto2026App.vuelo.home.notFound">No Vuelos found</Translate>
+              <Translate contentKey="aerolineaVirtualApp.vuelo.home.notFound">No Vuelos found</Translate>
             </div>
           )
         )}

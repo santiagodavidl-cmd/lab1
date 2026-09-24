@@ -330,7 +330,7 @@ class ReservaResourceIT {
         Reserva partialUpdatedReserva = new Reserva();
         partialUpdatedReserva.setId(reserva.getId());
 
-        partialUpdatedReserva.codigoReserva(UPDATED_CODIGO_RESERVA).asiento(UPDATED_ASIENTO);
+        partialUpdatedReserva.fechaReserva(UPDATED_FECHA_RESERVA);
 
         restReservaMockMvc
             .perform(

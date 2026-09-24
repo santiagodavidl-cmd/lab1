@@ -94,16 +94,16 @@ export const Reserva = () => {
   return (
     <div>
       <h2 id="reserva-heading" data-cy="ReservaHeading">
-        <Translate contentKey="proyecto2026App.reserva.home.title">Reservas</Translate>
+        <Translate contentKey="aerolineaVirtualApp.reserva.home.title">Reservas</Translate>
         <div className="d-flex justify-content-end">
           <Button className="me-2" variant="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
-            <Translate contentKey="proyecto2026App.reserva.home.refreshListLabel">Refresh List</Translate>
+            <Translate contentKey="aerolineaVirtualApp.reserva.home.refreshListLabel">Refresh List</Translate>
           </Button>
           <Link to="/reserva/new" className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
-            <Translate contentKey="proyecto2026App.reserva.home.createLabel">Create new Reserva</Translate>
+            <Translate contentKey="aerolineaVirtualApp.reserva.home.createLabel">Create new Reserva</Translate>
           </Link>
         </div>
       </h2>
@@ -113,25 +113,26 @@ export const Reserva = () => {
             <thead>
               <tr>
                 <th className="hand" onClick={sort('id')}>
-                  <Translate contentKey="proyecto2026App.reserva.id">ID</Translate> <FontAwesomeIcon icon={getSortIconByFieldName('id')} />
+                  <Translate contentKey="aerolineaVirtualApp.reserva.id">ID</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('id')} />
                 </th>
                 <th className="hand" onClick={sort('codigoReserva')}>
-                  <Translate contentKey="proyecto2026App.reserva.codigoReserva">Codigo Reserva</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.reserva.codigoReserva">Codigo Reserva</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('codigoReserva')} />
                 </th>
                 <th className="hand" onClick={sort('fechaReserva')}>
-                  <Translate contentKey="proyecto2026App.reserva.fechaReserva">Fecha Reserva</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.reserva.fechaReserva">Fecha Reserva</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('fechaReserva')} />
                 </th>
                 <th className="hand" onClick={sort('asiento')}>
-                  <Translate contentKey="proyecto2026App.reserva.asiento">Asiento</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.reserva.asiento">Asiento</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('asiento')} />
                 </th>
                 <th>
-                  <Translate contentKey="proyecto2026App.reserva.pasajero">Pasajero</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="aerolineaVirtualApp.reserva.pasajero">Pasajero</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th>
-                  <Translate contentKey="proyecto2026App.reserva.vuelo">Vuelo</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="aerolineaVirtualApp.reserva.vuelo">Vuelo</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th />
               </tr>
@@ -191,7 +192,7 @@ export const Reserva = () => {
         ) : (
           !loading && (
             <div className="alert alert-warning">
-              <Translate contentKey="proyecto2026App.reserva.home.notFound">No Reservas found</Translate>
+              <Translate contentKey="aerolineaVirtualApp.reserva.home.notFound">No Reservas found</Translate>
             </div>
           )
         )}

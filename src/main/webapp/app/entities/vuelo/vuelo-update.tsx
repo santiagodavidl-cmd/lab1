@@ -82,8 +82,8 @@ export const VueloUpdate = () => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="proyecto2026App.vuelo.home.createOrEditLabel" data-cy="VueloCreateUpdateHeading">
-            <Translate contentKey="proyecto2026App.vuelo.home.createOrEditLabel">Create or edit a Vuelo</Translate>
+          <h2 id="aerolineaVirtualApp.vuelo.home.createOrEditLabel" data-cy="VueloCreateUpdateHeading">
+            <Translate contentKey="aerolineaVirtualApp.vuelo.home.createOrEditLabel">Create or edit a Vuelo</Translate>
           </h2>
         </Col>
       </Row>
@@ -104,7 +104,7 @@ export const VueloUpdate = () => {
                 />
               )}
               <ValidatedField
-                label={translate('proyecto2026App.vuelo.numeroVuelo')}
+                label={translate('aerolineaVirtualApp.vuelo.numeroVuelo')}
                 id="vuelo-numeroVuelo"
                 name="numeroVuelo"
                 data-cy="numeroVuelo"
@@ -114,7 +114,7 @@ export const VueloUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.vuelo.origen')}
+                label={translate('aerolineaVirtualApp.vuelo.origen')}
                 id="vuelo-origen"
                 name="origen"
                 data-cy="origen"
@@ -124,7 +124,7 @@ export const VueloUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.vuelo.destino')}
+                label={translate('aerolineaVirtualApp.vuelo.destino')}
                 id="vuelo-destino"
                 name="destino"
                 data-cy="destino"
@@ -134,7 +134,7 @@ export const VueloUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.vuelo.fechaSalida')}
+                label={translate('aerolineaVirtualApp.vuelo.fechaSalida')}
                 id="vuelo-fechaSalida"
                 name="fechaSalida"
                 data-cy="fechaSalida"
@@ -145,7 +145,7 @@ export const VueloUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.vuelo.precio')}
+                label={translate('aerolineaVirtualApp.vuelo.precio')}
                 id="vuelo-precio"
                 name="precio"
                 data-cy="precio"
@@ -155,7 +155,13 @@ export const VueloUpdate = () => {
                   validate: v => isNumber(v) || translate('entity.validation.number'),
                 }}
               />
-              <ValidatedField id="vuelo-avion" name="avion" data-cy="avion" label={translate('proyecto2026App.vuelo.avion')} type="select">
+              <ValidatedField
+                id="vuelo-avion"
+                name="avion"
+                data-cy="avion"
+                label={translate('aerolineaVirtualApp.vuelo.avion')}
+                type="select"
+              >
                 <option value="" key="0" />
                 {avions
                   ? avions.map(otherEntity => (

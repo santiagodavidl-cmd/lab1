@@ -2,7 +2,7 @@
   "generator-jhipster": {
     "applicationType": "monolith",
     "authenticationType": "jwt",
-    "baseName": "proyecto2026",
+    "baseName": "aerolineaVirtual",
     "buildTool": "maven",
     "cacheProvider": "ehcache",
     "clientFramework": "react",
@@ -20,7 +20,6 @@
     "languages": ["es", "en"],
     "lastLiquibaseTimestamp": 1790228777000,
     "microfrontend": null,
-    "microfrontends": [],
     "nativeLanguage": "es",
     "packageName": "com.udea.proyecto",
     "prodDatabaseType": "mysql",

@@ -92,7 +92,7 @@ management:
 
 spring:
   application:
-    name: proyecto2026
+    name: aerolineaVirtual
   docker:
     compose:
       enabled: true
@@ -152,13 +152,13 @@ spring:
           authorities-claim-name: auth
   task:
     execution:
-      thread-name-prefix: proyecto-2026-task-
+      thread-name-prefix: aerolinea-virtual-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: proyecto-2026-scheduling-
+      thread-name-prefix: aerolinea-virtual-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -189,7 +189,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'proyecto2026App'
+    name: 'aerolineaVirtualApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #   allowed-origins: "http://localhost:8100,http://localhost:9000"
@@ -199,12 +199,12 @@ jhipster:
   #   allow-credentials: true
   #   max-age: 1800
   mail:
-    from: proyecto2026@localhost
+    from: aerolineaVirtual@localhost
   api-docs:
     default-include-pattern: /api/**
     management-include-pattern: /management/**
-    title: Proyecto 2026 API
-    description: Proyecto 2026 API documentation
+    title: Aerolinea Virtual API
+    description: Aerolinea Virtual API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:

@@ -23,7 +23,7 @@ export const PasajeroDetail = () => {
     <Row>
       <Col md="8">
         <h2 data-cy="pasajeroDetailsHeading">
-          <Translate contentKey="proyecto2026App.pasajero.detail.title">Pasajero</Translate>
+          <Translate contentKey="aerolineaVirtualApp.pasajero.detail.title">Pasajero</Translate>
         </h2>
         <dl className="jh-entity-details">
           <dt>
@@ -34,25 +34,25 @@ export const PasajeroDetail = () => {
           <dd>{pasajeroEntity.id}</dd>
           <dt>
             <span id="nombre">
-              <Translate contentKey="proyecto2026App.pasajero.nombre">Nombre</Translate>
+              <Translate contentKey="aerolineaVirtualApp.pasajero.nombre">Nombre</Translate>
             </span>
           </dt>
           <dd>{pasajeroEntity.nombre}</dd>
           <dt>
             <span id="apellido">
-              <Translate contentKey="proyecto2026App.pasajero.apellido">Apellido</Translate>
+              <Translate contentKey="aerolineaVirtualApp.pasajero.apellido">Apellido</Translate>
             </span>
           </dt>
           <dd>{pasajeroEntity.apellido}</dd>
           <dt>
             <span id="documento">
-              <Translate contentKey="proyecto2026App.pasajero.documento">Documento</Translate>
+              <Translate contentKey="aerolineaVirtualApp.pasajero.documento">Documento</Translate>
             </span>
           </dt>
           <dd>{pasajeroEntity.documento}</dd>
           <dt>
             <span id="email">
-              <Translate contentKey="proyecto2026App.pasajero.email">Email</Translate>
+              <Translate contentKey="aerolineaVirtualApp.pasajero.email">Email</Translate>
             </span>
           </dt>
           <dd>{pasajeroEntity.email}</dd>

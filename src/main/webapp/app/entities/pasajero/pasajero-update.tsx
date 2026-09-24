@@ -68,8 +68,8 @@ export const PasajeroUpdate = () => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="proyecto2026App.pasajero.home.createOrEditLabel" data-cy="PasajeroCreateUpdateHeading">
-            <Translate contentKey="proyecto2026App.pasajero.home.createOrEditLabel">Create or edit a Pasajero</Translate>
+          <h2 id="aerolineaVirtualApp.pasajero.home.createOrEditLabel" data-cy="PasajeroCreateUpdateHeading">
+            <Translate contentKey="aerolineaVirtualApp.pasajero.home.createOrEditLabel">Create or edit a Pasajero</Translate>
           </h2>
         </Col>
       </Row>
@@ -90,7 +90,7 @@ export const PasajeroUpdate = () => {
                 />
               )}
               <ValidatedField
-                label={translate('proyecto2026App.pasajero.nombre')}
+                label={translate('aerolineaVirtualApp.pasajero.nombre')}
                 id="pasajero-nombre"
                 name="nombre"
                 data-cy="nombre"
@@ -100,7 +100,7 @@ export const PasajeroUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.pasajero.apellido')}
+                label={translate('aerolineaVirtualApp.pasajero.apellido')}
                 id="pasajero-apellido"
                 name="apellido"
                 data-cy="apellido"
@@ -110,7 +110,7 @@ export const PasajeroUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.pasajero.documento')}
+                label={translate('aerolineaVirtualApp.pasajero.documento')}
                 id="pasajero-documento"
                 name="documento"
                 data-cy="documento"
@@ -120,7 +120,7 @@ export const PasajeroUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.pasajero.email')}
+                label={translate('aerolineaVirtualApp.pasajero.email')}
                 id="pasajero-email"
                 name="email"
                 data-cy="email"

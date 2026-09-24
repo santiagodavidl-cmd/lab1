@@ -30,7 +30,7 @@ public class AvionResource {
 
     private static final String ENTITY_NAME = "avion";
 
-    @Value("${jhipster.clientApp.name:proyecto2026}")
+    @Value("${jhipster.clientApp.name:aerolineaVirtual}")
     private String applicationName;
 
     private final AvionService avionService;

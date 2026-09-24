@@ -45,8 +45,8 @@ export const ReservaDeleteDialog = () => {
       <ModalHeader data-cy="reservaDeleteDialogHeading" closeButton>
         <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
       </ModalHeader>
-      <ModalBody id="proyecto2026App.reserva.delete.question">
-        <Translate contentKey="proyecto2026App.reserva.delete.question" interpolate={{ id: reservaEntity.id }}>
+      <ModalBody id="aerolineaVirtualApp.reserva.delete.question">
+        <Translate contentKey="aerolineaVirtualApp.reserva.delete.question" interpolate={{ id: reservaEntity.id }}>
           Are you sure you want to delete this Reserva?
         </Translate>
       </ModalBody>

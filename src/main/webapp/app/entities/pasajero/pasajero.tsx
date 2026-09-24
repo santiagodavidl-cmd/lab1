@@ -93,16 +93,16 @@ export const Pasajero = () => {
   return (
     <div>
       <h2 id="pasajero-heading" data-cy="PasajeroHeading">
-        <Translate contentKey="proyecto2026App.pasajero.home.title">Pasajeros</Translate>
+        <Translate contentKey="aerolineaVirtualApp.pasajero.home.title">Pasajeros</Translate>
         <div className="d-flex justify-content-end">
           <Button className="me-2" variant="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
-            <Translate contentKey="proyecto2026App.pasajero.home.refreshListLabel">Refresh List</Translate>
+            <Translate contentKey="aerolineaVirtualApp.pasajero.home.refreshListLabel">Refresh List</Translate>
           </Button>
           <Link to="/pasajero/new" className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
-            <Translate contentKey="proyecto2026App.pasajero.home.createLabel">Create new Pasajero</Translate>
+            <Translate contentKey="aerolineaVirtualApp.pasajero.home.createLabel">Create new Pasajero</Translate>
           </Link>
         </div>
       </h2>
@@ -112,22 +112,23 @@ export const Pasajero = () => {
             <thead>
               <tr>
                 <th className="hand" onClick={sort('id')}>
-                  <Translate contentKey="proyecto2026App.pasajero.id">ID</Translate> <FontAwesomeIcon icon={getSortIconByFieldName('id')} />
+                  <Translate contentKey="aerolineaVirtualApp.pasajero.id">ID</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('id')} />
                 </th>
                 <th className="hand" onClick={sort('nombre')}>
-                  <Translate contentKey="proyecto2026App.pasajero.nombre">Nombre</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.pasajero.nombre">Nombre</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('nombre')} />
                 </th>
                 <th className="hand" onClick={sort('apellido')}>
-                  <Translate contentKey="proyecto2026App.pasajero.apellido">Apellido</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.pasajero.apellido">Apellido</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('apellido')} />
                 </th>
                 <th className="hand" onClick={sort('documento')}>
-                  <Translate contentKey="proyecto2026App.pasajero.documento">Documento</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.pasajero.documento">Documento</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('documento')} />
                 </th>
                 <th className="hand" onClick={sort('email')}>
-                  <Translate contentKey="proyecto2026App.pasajero.email">Email</Translate>{' '}
+                  <Translate contentKey="aerolineaVirtualApp.pasajero.email">Email</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('email')} />
                 </th>
                 <th />
@@ -187,7 +188,7 @@ export const Pasajero = () => {
         ) : (
           !loading && (
             <div className="alert alert-warning">
-              <Translate contentKey="proyecto2026App.pasajero.home.notFound">No Pasajeros found</Translate>
+              <Translate contentKey="aerolineaVirtualApp.pasajero.home.notFound">No Pasajeros found</Translate>
             </div>
           )
         )}

@@ -312,7 +312,7 @@ class AvionResourceIT {
         Avion partialUpdatedAvion = new Avion();
         partialUpdatedAvion.setId(avion.getId());
 
-        partialUpdatedAvion.capacidad(UPDATED_CAPACIDAD).matricula(UPDATED_MATRICULA);
+        partialUpdatedAvion.modelo(UPDATED_MODELO).matricula(UPDATED_MATRICULA);
 
         restAvionMockMvc
             .perform(

@@ -24,7 +24,7 @@ export const VueloDetail = () => {
     <Row>
       <Col md="8">
         <h2 data-cy="vueloDetailsHeading">
-          <Translate contentKey="proyecto2026App.vuelo.detail.title">Vuelo</Translate>
+          <Translate contentKey="aerolineaVirtualApp.vuelo.detail.title">Vuelo</Translate>
         </h2>
         <dl className="jh-entity-details">
           <dt>
@@ -35,36 +35,36 @@ export const VueloDetail = () => {
           <dd>{vueloEntity.id}</dd>
           <dt>
             <span id="numeroVuelo">
-              <Translate contentKey="proyecto2026App.vuelo.numeroVuelo">Numero Vuelo</Translate>
+              <Translate contentKey="aerolineaVirtualApp.vuelo.numeroVuelo">Numero Vuelo</Translate>
             </span>
           </dt>
           <dd>{vueloEntity.numeroVuelo}</dd>
           <dt>
             <span id="origen">
-              <Translate contentKey="proyecto2026App.vuelo.origen">Origen</Translate>
+              <Translate contentKey="aerolineaVirtualApp.vuelo.origen">Origen</Translate>
             </span>
           </dt>
           <dd>{vueloEntity.origen}</dd>
           <dt>
             <span id="destino">
-              <Translate contentKey="proyecto2026App.vuelo.destino">Destino</Translate>
+              <Translate contentKey="aerolineaVirtualApp.vuelo.destino">Destino</Translate>
             </span>
           </dt>
           <dd>{vueloEntity.destino}</dd>
           <dt>
             <span id="fechaSalida">
-              <Translate contentKey="proyecto2026App.vuelo.fechaSalida">Fecha Salida</Translate>
+              <Translate contentKey="aerolineaVirtualApp.vuelo.fechaSalida">Fecha Salida</Translate>
             </span>
           </dt>
           <dd>{vueloEntity.fechaSalida ? <TextFormat value={vueloEntity.fechaSalida} type="date" format={APP_DATE_FORMAT} /> : null}</dd>
           <dt>
             <span id="precio">
-              <Translate contentKey="proyecto2026App.vuelo.precio">Precio</Translate>
+              <Translate contentKey="aerolineaVirtualApp.vuelo.precio">Precio</Translate>
             </span>
           </dt>
           <dd>{vueloEntity.precio}</dd>
           <dt>
-            <Translate contentKey="proyecto2026App.vuelo.avion">Avion</Translate>
+            <Translate contentKey="aerolineaVirtualApp.vuelo.avion">Avion</Translate>
           </dt>
           <dd>{vueloEntity.avion ? vueloEntity.avion.matricula : ''}</dd>
         </dl>

@@ -84,8 +84,8 @@ export const ReservaUpdate = () => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="proyecto2026App.reserva.home.createOrEditLabel" data-cy="ReservaCreateUpdateHeading">
-            <Translate contentKey="proyecto2026App.reserva.home.createOrEditLabel">Create or edit a Reserva</Translate>
+          <h2 id="aerolineaVirtualApp.reserva.home.createOrEditLabel" data-cy="ReservaCreateUpdateHeading">
+            <Translate contentKey="aerolineaVirtualApp.reserva.home.createOrEditLabel">Create or edit a Reserva</Translate>
           </h2>
         </Col>
       </Row>
@@ -106,7 +106,7 @@ export const ReservaUpdate = () => {
                 />
               )}
               <ValidatedField
-                label={translate('proyecto2026App.reserva.codigoReserva')}
+                label={translate('aerolineaVirtualApp.reserva.codigoReserva')}
                 id="reserva-codigoReserva"
                 name="codigoReserva"
                 data-cy="codigoReserva"
@@ -116,7 +116,7 @@ export const ReservaUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.reserva.fechaReserva')}
+                label={translate('aerolineaVirtualApp.reserva.fechaReserva')}
                 id="reserva-fechaReserva"
                 name="fechaReserva"
                 data-cy="fechaReserva"
@@ -127,7 +127,7 @@ export const ReservaUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.reserva.asiento')}
+                label={translate('aerolineaVirtualApp.reserva.asiento')}
                 id="reserva-asiento"
                 name="asiento"
                 data-cy="asiento"
@@ -137,7 +137,7 @@ export const ReservaUpdate = () => {
                 id="reserva-pasajero"
                 name="pasajero"
                 data-cy="pasajero"
-                label={translate('proyecto2026App.reserva.pasajero')}
+                label={translate('aerolineaVirtualApp.reserva.pasajero')}
                 type="select"
               >
                 <option value="" key="0" />
@@ -153,7 +153,7 @@ export const ReservaUpdate = () => {
                 id="reserva-vuelo"
                 name="vuelo"
                 data-cy="vuelo"
-                label={translate('proyecto2026App.reserva.vuelo')}
+                label={translate('aerolineaVirtualApp.reserva.vuelo')}
                 type="select"
               >
                 <option value="" key="0" />

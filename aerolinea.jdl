@@ -1,39 +1,51 @@
 
-entity Avion {
-  modelo String required,
-  capacidad Integer required min(10) max(500),
-  matricula String required unique
-}
-
-entity Vuelo {
-  numeroVuelo String required,
-  origen String required,
-  destino String required,
-  fechaSalida Instant required,
-  precio BigDecimal required
+application {
+  config {
+    baseName aerolineaVirtual
+    applicationType monolith
+    databaseType sql
+    devDatabaseType mysql
+    prodDatabaseType mysql
+    buildTool maven
+  }
 }
 
 entity Pasajero {
   nombre String required,
   apellido String required,
-  documento String required unique,
-  email String required
+  email String required unique,
+  telefono String,
+  fechaNacimiento LocalDate
 }
 
 entity Reserva {
-  codigoReserva String required unique,
+  codigo String required unique,
   fechaReserva Instant required,
-  asiento String
+  estado String required
+}
+
+entity Vuelo {
+  numeroVuelo String required unique,
+  origen String required,
+  destino String required,
+  fechaSalida Instant required,
+  fechaLlegada Instant required
+}
+
+entity Asiento {
+  numero String required,
+  clase String required,
+  disponible Boolean required
 }
 
 relationship OneToMany {
-  Avion{vuelos} to Vuelo{avion(matricula)}
+  Pasajero to Reserva
 }
 
 relationship ManyToOne {
-  Reserva{pasajero(documento)} to Pasajero,
-  Reserva{vuelo(numeroVuelo)} to Vuelo
+  Reserva to Vuelo,
+  Reserva to Asiento
 }
 
-paginate Vuelo, Pasajero, Reserva with pagination
-service all with serviceImpl
+paginate Pasajero, Reserva, Vuelo, Asiento with pagination
+service Pasajero, Reserva, Vuelo, Asiento with serviceClass

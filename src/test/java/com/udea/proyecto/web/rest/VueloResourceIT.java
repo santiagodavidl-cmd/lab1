@@ -405,7 +405,7 @@ class VueloResourceIT {
         Vuelo partialUpdatedVuelo = new Vuelo();
         partialUpdatedVuelo.setId(vuelo.getId());
 
-        partialUpdatedVuelo.destino(UPDATED_DESTINO).fechaSalida(UPDATED_FECHA_SALIDA).precio(UPDATED_PRECIO);
+        partialUpdatedVuelo.fechaSalida(UPDATED_FECHA_SALIDA);
 
         restVueloMockMvc
             .perform(

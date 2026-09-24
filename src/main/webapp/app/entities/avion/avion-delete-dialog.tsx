@@ -44,8 +44,8 @@ export const AvionDeleteDialog = () => {
       <ModalHeader data-cy="avionDeleteDialogHeading" closeButton>
         <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
       </ModalHeader>
-      <ModalBody id="proyecto2026App.avion.delete.question">
-        <Translate contentKey="proyecto2026App.avion.delete.question" interpolate={{ id: avionEntity.id }}>
+      <ModalBody id="aerolineaVirtualApp.avion.delete.question">
+        <Translate contentKey="aerolineaVirtualApp.avion.delete.question" interpolate={{ id: avionEntity.id }}>
           Are you sure you want to delete this Avion?
         </Translate>
       </ModalBody>

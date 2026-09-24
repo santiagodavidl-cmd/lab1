@@ -24,7 +24,7 @@ export const ReservaDetail = () => {
     <Row>
       <Col md="8">
         <h2 data-cy="reservaDetailsHeading">
-          <Translate contentKey="proyecto2026App.reserva.detail.title">Reserva</Translate>
+          <Translate contentKey="aerolineaVirtualApp.reserva.detail.title">Reserva</Translate>
         </h2>
         <dl className="jh-entity-details">
           <dt>
@@ -35,13 +35,13 @@ export const ReservaDetail = () => {
           <dd>{reservaEntity.id}</dd>
           <dt>
             <span id="codigoReserva">
-              <Translate contentKey="proyecto2026App.reserva.codigoReserva">Codigo Reserva</Translate>
+              <Translate contentKey="aerolineaVirtualApp.reserva.codigoReserva">Codigo Reserva</Translate>
             </span>
           </dt>
           <dd>{reservaEntity.codigoReserva}</dd>
           <dt>
             <span id="fechaReserva">
-              <Translate contentKey="proyecto2026App.reserva.fechaReserva">Fecha Reserva</Translate>
+              <Translate contentKey="aerolineaVirtualApp.reserva.fechaReserva">Fecha Reserva</Translate>
             </span>
           </dt>
           <dd>
@@ -49,16 +49,16 @@ export const ReservaDetail = () => {
           </dd>
           <dt>
             <span id="asiento">
-              <Translate contentKey="proyecto2026App.reserva.asiento">Asiento</Translate>
+              <Translate contentKey="aerolineaVirtualApp.reserva.asiento">Asiento</Translate>
             </span>
           </dt>
           <dd>{reservaEntity.asiento}</dd>
           <dt>
-            <Translate contentKey="proyecto2026App.reserva.pasajero">Pasajero</Translate>
+            <Translate contentKey="aerolineaVirtualApp.reserva.pasajero">Pasajero</Translate>
           </dt>
           <dd>{reservaEntity.pasajero ? reservaEntity.pasajero.documento : ''}</dd>
           <dt>
-            <Translate contentKey="proyecto2026App.reserva.vuelo">Vuelo</Translate>
+            <Translate contentKey="aerolineaVirtualApp.reserva.vuelo">Vuelo</Translate>
           </dt>
           <dd>{reservaEntity.vuelo ? reservaEntity.vuelo.numeroVuelo : ''}</dd>
         </dl>

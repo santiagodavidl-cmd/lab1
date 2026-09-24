@@ -335,7 +335,7 @@ class PasajeroResourceIT {
         Pasajero partialUpdatedPasajero = new Pasajero();
         partialUpdatedPasajero.setId(pasajero.getId());
 
-        partialUpdatedPasajero.nombre(UPDATED_NOMBRE).documento(UPDATED_DOCUMENTO);
+        partialUpdatedPasajero.nombre(UPDATED_NOMBRE);
 
         restPasajeroMockMvc
             .perform(

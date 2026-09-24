@@ -71,8 +71,8 @@ export const AvionUpdate = () => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="proyecto2026App.avion.home.createOrEditLabel" data-cy="AvionCreateUpdateHeading">
-            <Translate contentKey="proyecto2026App.avion.home.createOrEditLabel">Create or edit a Avion</Translate>
+          <h2 id="aerolineaVirtualApp.avion.home.createOrEditLabel" data-cy="AvionCreateUpdateHeading">
+            <Translate contentKey="aerolineaVirtualApp.avion.home.createOrEditLabel">Create or edit a Avion</Translate>
           </h2>
         </Col>
       </Row>
@@ -93,7 +93,7 @@ export const AvionUpdate = () => {
                 />
               )}
               <ValidatedField
-                label={translate('proyecto2026App.avion.modelo')}
+                label={translate('aerolineaVirtualApp.avion.modelo')}
                 id="avion-modelo"
                 name="modelo"
                 data-cy="modelo"
@@ -103,7 +103,7 @@ export const AvionUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.avion.capacidad')}
+                label={translate('aerolineaVirtualApp.avion.capacidad')}
                 id="avion-capacidad"
                 name="capacidad"
                 data-cy="capacidad"
@@ -116,7 +116,7 @@ export const AvionUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('proyecto2026App.avion.matricula')}
+                label={translate('aerolineaVirtualApp.avion.matricula')}
                 id="avion-matricula"
                 name="matricula"
                 data-cy="matricula"
